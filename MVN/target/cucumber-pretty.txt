@@ -1,0 +1,58 @@
+
+@Adidas
+Scenario Outline: Get available pets and assert result                                                       # src/test/java/features/PetStore.feature:10
+  Given GET request on https://petstore.swagger.io, /v2/pet/findByStatus?status=available for available pets # stepdefs.Api_stepDef.get_request_on_for_pets(java.lang.String,java.lang.String,java.lang.String)
+  Then Validate GET response                                                                                 # stepdefs.Api_stepDef.validate_get_response()
+
+@Adidas
+Scenario Outline: POST a pet to store and validate result                                                                                                                                                                                                                            # src/test/java/features/PetStore.feature:19
+  Given POST request on https://petstore.swagger.io, /v2/pet for {  "id": 0,  "category": {    "id": 0,    "name": "string"  },  "name": "doggie",  "photoUrls": [    "string"  ],  "tags": [    {      "id": 0,      "name": "string"    }  ],  "status": "available"} pet to store # stepdefs.Api_stepDef.post_request_on_for_pet_to_store(java.lang.String,java.lang.String,java.lang.String)
+  Then Validate pet is added to store                                                                                                                                                                                                                                                # stepdefs.Api_stepDef.validate_pet_is_added_to_store()
+
+@Adidas
+Scenario: Launch Web Store           # src/test/java/features/PurchaseProduct.feature:5
+  Given User launches chrome browser # stepdefs.Category_stepDef.user_launches_chrome_browser()
+  Given User open                    # stepdefs.Category_stepDef.user_open(java.lang.String)
+
+@Adidas
+Scenario Outline: Add a product to cart   # src/test/java/features/PurchaseProduct.feature:20
+  When User clicks on Home button         # stepdefs.Category_stepDef.user_clicks_on_home_button()
+  When User clicks on categoryLaptops     # stepdefs.Category_stepDef.user_clicks_on_category(java.lang.String)
+  And User clicks on Laptop Sony vaio i5  # stepdefs.Category_stepDef.user_clicks_on_laptop(java.lang.String)
+  Then Header should be Sony vaio i5      # stepdefs.Category_stepDef.header_should_be(java.lang.String)
+  When User clicks on AddToCart           # stepdefs.Category_stepDef.user_clicks_on_addtocart()
+  Then Product Added pop-up should appear # stepdefs.Category_stepDef.product_added_popup_should_appear()
+  And User accepts pop-up confirmation    # stepdefs.Category_stepDef.user_accepts_popup_confirmation()
+
+@Adidas
+Scenario Outline: Add a product to cart   # src/test/java/features/PurchaseProduct.feature:21
+  When User clicks on Home button         # stepdefs.Category_stepDef.user_clicks_on_home_button()
+  When User clicks on categoryLaptops     # stepdefs.Category_stepDef.user_clicks_on_category(java.lang.String)
+  And User clicks on Laptop Dell i7 8gb   # stepdefs.Category_stepDef.user_clicks_on_laptop(java.lang.String)
+  Then Header should be Dell i7 8gb       # stepdefs.Category_stepDef.header_should_be(java.lang.String)
+  When User clicks on AddToCart           # stepdefs.Category_stepDef.user_clicks_on_addtocart()
+  Then Product Added pop-up should appear # stepdefs.Category_stepDef.product_added_popup_should_appear()
+  And User accepts pop-up confirmation    # stepdefs.Category_stepDef.user_accepts_popup_confirmation()
+
+@Adidas
+Scenario: Navigate to cart              # src/test/java/features/PurchaseProduct.feature:23
+  When User clicks cart button          # stepdefs.Category_stepDef.user_clicks_cart_button()
+  Then Products should be added in cart # stepdefs.Category_stepDef.products_should_be_added_in_cart(java.util.List<java.lang.String>)
+
+@Adidas
+Scenario Outline: Delete product # src/test/java/features/PurchaseProduct.feature:34
+  When User deletes Dell i7 8gb  # stepdefs.Category_stepDef.user_deletes(java.lang.String)
+
+@Adidas
+Scenario Outline: Place order and capture purchase details           # src/test/java/features/PurchaseProduct.feature:45
+  When User fetch total amount                                       # stepdefs.Category_stepDef.user_fetch_total_amount()
+  When User clicks on place order                                    # stepdefs.Category_stepDef.user_clicks_on_place_order()
+  And Fill form details MAYANK JAIN,INDIA,DELHI,123456789,DEC,2020   # stepdefs.Category_stepDef.fill_form_details_(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+  And User click on Purchase button                                  # stepdefs.Category_stepDef.user_click_on_purchase_button()
+  Then Confirmation Thank you for your purchase! should be displayed # stepdefs.Category_stepDef.confirmation_should_be_displayed(java.lang.String)
+
+@Adidas
+Scenario: Capture purchase details     # src/test/java/features/PurchaseProduct.feature:47
+  And Capture purchase details and log # stepdefs.Category_stepDef.capture_purchase_details_and_log()
+  Then Verify purchase details         # stepdefs.Category_stepDef.verify_purchase_details()
+  And Click on OK button               # stepdefs.Category_stepDef.click_on_ok_button()

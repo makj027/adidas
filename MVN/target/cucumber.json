@@ -1,0 +1,678 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-08T14:53:33.873Z",
+        "line": 10,
+        "name": "Get available pets and assert result",
+        "description": "",
+        "id": "pet-store-validation;get-available-pets-and-assert-result;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6427900200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "GET request on https://petstore.swagger.io, /v2/pet/findByStatus?status\u003davailable for available pets",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://petstore.swagger.io",
+                  "offset": 15
+                },
+                {
+                  "val": "/v2/pet/findByStatus?status\u003davailable",
+                  "offset": 44
+                },
+                {
+                  "val": "available",
+                  "offset": 86
+                }
+              ],
+              "location": "stepdefs.Api_stepDef.get_request_on_for_pets(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 999018300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Validate GET response",
+            "match": {
+              "location": "stepdefs.Api_stepDef.validate_get_response()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Adidas"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-08T14:53:41.499Z",
+        "line": 19,
+        "name": "POST a pet to store and validate result",
+        "description": "",
+        "id": "pet-store-validation;post-a-pet-to-store-and-validate-result;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1563614400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "POST request on https://petstore.swagger.io, /v2/pet for {  \"id\": 0,  \"category\": {    \"id\": 0,    \"name\": \"string\"  },  \"name\": \"doggie\",  \"photoUrls\": [    \"string\"  ],  \"tags\": [    {      \"id\": 0,      \"name\": \"string\"    }  ],  \"status\": \"available\"} pet to store",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://petstore.swagger.io",
+                  "offset": 16
+                },
+                {
+                  "val": "/v2/pet",
+                  "offset": 45
+                },
+                {
+                  "val": "{  \"id\": 0,  \"category\": {    \"id\": 0,    \"name\": \"string\"  },  \"name\": \"doggie\",  \"photoUrls\": [    \"string\"  ],  \"tags\": [    {      \"id\": 0,      \"name\": \"string\"    }  ],  \"status\": \"available\"}",
+                  "offset": 57
+                }
+              ],
+              "location": "stepdefs.Api_stepDef.post_request_on_for_pet_to_store(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10002100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Validate pet is added to store",
+            "match": {
+              "location": "stepdefs.Api_stepDef.validate_pet_is_added_to_store()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Adidas"
+          }
+        ]
+      }
+    ],
+    "name": "Pet Store validation",
+    "description": "",
+    "id": "pet-store-validation",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/PetStore.feature",
+    "tags": [
+      {
+        "name": "@Adidas",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-08T14:53:43.097Z",
+        "line": 5,
+        "name": "Launch Web Store",
+        "description": "",
+        "id": "purchase-product-feature;launch-web-store",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10382036900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User launches chrome browser",
+            "match": {
+              "location": "stepdefs.Category_stepDef.user_launches_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2521980100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User open",
+            "match": {
+              "location": "stepdefs.Category_stepDef.user_open(java.lang.String)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "https://www.demoblaze.com/index.html"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Adidas"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-08T14:53:56.031Z",
+        "line": 20,
+        "name": "Add a product to cart",
+        "description": "",
+        "id": "purchase-product-feature;add-a-product-to-cart;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5614040200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks on Home button",
+            "match": {
+              "location": "stepdefs.Category_stepDef.user_clicks_on_home_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5191026600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User clicks on categoryLaptops",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Laptops",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefs.Category_stepDef.user_clicks_on_category(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7982071400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User clicks on Laptop Sony vaio i5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sony vaio i5",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefs.Category_stepDef.user_clicks_on_laptop(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1205506500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Header should be Sony vaio i5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sony vaio i5",
+                  "offset": 17
+                }
+              ],
+              "location": "stepdefs.Category_stepDef.header_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5174344800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks on AddToCart",
+            "match": {
+              "location": "stepdefs.Category_stepDef.user_clicks_on_addtocart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3111138000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Product Added pop-up should appear",
+            "match": {
+              "location": "stepdefs.Category_stepDef.product_added_popup_should_appear()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10076100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User accepts pop-up confirmation",
+            "match": {
+              "location": "stepdefs.Category_stepDef.user_accepts_popup_confirmation()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Adidas"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-08T14:54:24.368Z",
+        "line": 21,
+        "name": "Add a product to cart",
+        "description": "",
+        "id": "purchase-product-feature;add-a-product-to-cart;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10269079300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks on Home button",
+            "match": {
+              "location": "stepdefs.Category_stepDef.user_clicks_on_home_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5514742200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User clicks on categoryLaptops",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Laptops",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefs.Category_stepDef.user_clicks_on_category(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6408790800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User clicks on Laptop Dell i7 8gb",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dell i7 8gb",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefs.Category_stepDef.user_clicks_on_laptop(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1183492900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Header should be Dell i7 8gb",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dell i7 8gb",
+                  "offset": 17
+                }
+              ],
+              "location": "stepdefs.Category_stepDef.header_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5136468100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks on AddToCart",
+            "match": {
+              "location": "stepdefs.Category_stepDef.user_clicks_on_addtocart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1546653500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Product Added pop-up should appear",
+            "match": {
+              "location": "stepdefs.Category_stepDef.product_added_popup_should_appear()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7130500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User accepts pop-up confirmation",
+            "match": {
+              "location": "stepdefs.Category_stepDef.user_accepts_popup_confirmation()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Adidas"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-08T14:54:54.460Z",
+        "line": 23,
+        "name": "Navigate to cart",
+        "description": "",
+        "id": "purchase-product-feature;navigate-to-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9446953700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User clicks cart button",
+            "match": {
+              "location": "stepdefs.Category_stepDef.user_clicks_cart_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10150755800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Products should be added in cart",
+            "match": {
+              "location": "stepdefs.Category_stepDef.products_should_be_added_in_cart(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sony vaio i5"
+                ]
+              },
+              {
+                "cells": [
+                  "Dell i7 8gb"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Adidas"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-08T14:55:14.069Z",
+        "line": 34,
+        "name": "Delete product",
+        "description": "",
+        "id": "purchase-product-feature;delete-product;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10230203400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User deletes Dell i7 8gb",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dell i7 8gb",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefs.Category_stepDef.user_deletes(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Adidas"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-08T14:55:24.316Z",
+        "line": 45,
+        "name": "Place order and capture purchase details",
+        "description": "",
+        "id": "purchase-product-feature;place-order-and-capture-purchase-details;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5055519000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User fetch total amount",
+            "match": {
+              "location": "stepdefs.Category_stepDef.user_fetch_total_amount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5115287500,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User clicks on place order",
+            "match": {
+              "location": "stepdefs.Category_stepDef.user_clicks_on_place_order()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 31549843400,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Fill form details MAYANK JAIN,INDIA,DELHI,123456789,DEC,2020",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MAYANK JAIN",
+                  "offset": 18
+                },
+                {
+                  "val": "INDIA",
+                  "offset": 30
+                },
+                {
+                  "val": "DELHI",
+                  "offset": 36
+                },
+                {
+                  "val": "123456789",
+                  "offset": 42
+                },
+                {
+                  "val": "DEC",
+                  "offset": 52
+                },
+                {
+                  "val": "2020",
+                  "offset": 56
+                }
+              ],
+              "location": "stepdefs.Category_stepDef.fill_form_details_(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5124261400,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User click on Purchase button",
+            "match": {
+              "location": "stepdefs.Category_stepDef.user_click_on_purchase_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28833400,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Confirmation Thank you for your purchase! should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Thank you for your purchase!",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefs.Category_stepDef.confirmation_should_be_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Adidas"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-08T14:56:11.204Z",
+        "line": 47,
+        "name": "Capture purchase details",
+        "description": "",
+        "id": "purchase-product-feature;capture-purchase-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 68995900,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Capture purchase details and log",
+            "match": {
+              "location": "stepdefs.Category_stepDef.capture_purchase_details_and_log()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "Verify purchase details",
+            "match": {
+              "location": "stepdefs.Category_stepDef.verify_purchase_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10636055100,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "Click on OK button",
+            "match": {
+              "location": "stepdefs.Category_stepDef.click_on_ok_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Adidas"
+          }
+        ]
+      }
+    ],
+    "name": "Purchase Product Feature",
+    "description": "",
+    "id": "purchase-product-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/PurchaseProduct.feature",
+    "tags": [
+      {
+        "name": "@Adidas",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

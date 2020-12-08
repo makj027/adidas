@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="168.606">
+    <testcase classname="Pet Store validation" name="Get available pets and assert result" time="7.607">
+        <system-out><![CDATA[Given GET request on https://petstore.swagger.io, /v2/pet/findByStatus?status=available for available pets.passed
+Then Validate GET response..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Pet Store validation" name="POST a pet to store and validate result" time="1.581">
+        <system-out><![CDATA[Given POST request on https://petstore.swagger.io, /v2/pet for {  "id": 0,  "category": {    "id": 0,    "name": "string"  },  "name": "doggie",  "photoUrls": [    "string"  ],  "tags": [    {      "id": 0,      "name": "string"    }  ],  "status": "available"} pet to store.passed
+Then Validate pet is added to store.........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Purchase Product Feature" name="Launch Web Store" time="12.92">
+        <system-out><![CDATA[Given User launches chrome browser..........................................passed
+Given User open.............................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Purchase Product Feature" name="Add a product to cart" time="28.309">
+        <system-out><![CDATA[When User clicks on Home button.............................................passed
+When User clicks on categoryLaptops.........................................passed
+And User clicks on Laptop Sony vaio i5......................................passed
+Then Header should be Sony vaio i5..........................................passed
+When User clicks on AddToCart...............................................passed
+Then Product Added pop-up should appear.....................................passed
+And User accepts pop-up confirmation........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Purchase Product Feature" name="Add a product to cart 2" time="30.083">
+        <system-out><![CDATA[When User clicks on Home button.............................................passed
+When User clicks on categoryLaptops.........................................passed
+And User clicks on Laptop Dell i7 8gb.......................................passed
+Then Header should be Dell i7 8gb...........................................passed
+When User clicks on AddToCart...............................................passed
+Then Product Added pop-up should appear.....................................passed
+And User accepts pop-up confirmation........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Purchase Product Feature" name="Navigate to cart" time="19.603">
+        <system-out><![CDATA[When User clicks cart button................................................passed
+Then Products should be added in cart.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Purchase Product Feature" name="Delete product" time="10.233">
+        <system-out><![CDATA[When User deletes Dell i7 8gb...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Purchase Product Feature" name="Place order and capture purchase details" time="46.881">
+        <system-out><![CDATA[When User fetch total amount................................................passed
+When User clicks on place order.............................................passed
+And Fill form details MAYANK JAIN,INDIA,DELHI,123456789,DEC,2020............passed
+And User click on Purchase button...........................................passed
+Then Confirmation Thank you for your purchase! should be displayed..........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Purchase Product Feature" name="Capture purchase details" time="10.709">
+        <system-out><![CDATA[And Capture purchase details and log........................................passed
+Then Verify purchase details................................................passed
+And Click on OK button......................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

@@ -1,0 +1,480 @@
+[
+  {
+    "source": "^GET request on (.+), (.+) for (.+) pets$",
+    "steps": [
+      {
+        "name": "GET request on https://petstore.swagger.io, /v2/pet/findByStatus?status\u003davailable for available pets",
+        "aggregatedDurations": {
+          "median": 6.4279002,
+          "average": 6.4279002
+        },
+        "durations": [
+          {
+            "duration": 6.4279002,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PetStore.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Validate GET response$",
+    "steps": [
+      {
+        "name": "Validate GET response",
+        "aggregatedDurations": {
+          "median": 0.9990183,
+          "average": 0.9990183
+        },
+        "durations": [
+          {
+            "duration": 0.9990183,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PetStore.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^POST request on (.+), (.+) for (.+) pet to store$",
+    "steps": [
+      {
+        "name": "POST request on https://petstore.swagger.io, /v2/pet for {  \"id\": 0,  \"category\": {    \"id\": 0,    \"name\": \"string\"  },  \"name\": \"doggie\",  \"photoUrls\": [    \"string\"  ],  \"tags\": [    {      \"id\": 0,      \"name\": \"string\"    }  ],  \"status\": \"available\"} pet to store",
+        "aggregatedDurations": {
+          "median": 1.5636144,
+          "average": 1.5636144
+        },
+        "durations": [
+          {
+            "duration": 1.5636144,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PetStore.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Validate pet is added to store$",
+    "steps": [
+      {
+        "name": "Validate pet is added to store",
+        "aggregatedDurations": {
+          "median": 0.0100021,
+          "average": 0.0100021
+        },
+        "durations": [
+          {
+            "duration": 0.0100021,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PetStore.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User launches chrome browser$",
+    "steps": [
+      {
+        "name": "User launches chrome browser",
+        "aggregatedDurations": {
+          "median": 10.3820369,
+          "average": 10.3820369
+        },
+        "durations": [
+          {
+            "duration": 10.3820369,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User open$",
+    "steps": [
+      {
+        "name": "User open",
+        "aggregatedDurations": {
+          "median": 2.5219801,
+          "average": 2.5219801
+        },
+        "durations": [
+          {
+            "duration": 2.5219801,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User clicks on Home button$",
+    "steps": [
+      {
+        "name": "User clicks on Home button",
+        "aggregatedDurations": {
+          "median": 7.94155975,
+          "average": 7.94155975
+        },
+        "durations": [
+          {
+            "duration": 5.6140402,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:11"
+          },
+          {
+            "duration": 10.2690793,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User clicks on category(.+)$",
+    "steps": [
+      {
+        "name": "User clicks on categoryLaptops",
+        "aggregatedDurations": {
+          "median": 5.3528844,
+          "average": 5.3528844
+        },
+        "durations": [
+          {
+            "duration": 5.1910266,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:12"
+          },
+          {
+            "duration": 5.5147422,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User clicks on Laptop (.+)$",
+    "steps": [
+      {
+        "name": "User clicks on Laptop Sony vaio i5",
+        "aggregatedDurations": {
+          "median": 7.9820714,
+          "average": 7.9820714
+        },
+        "durations": [
+          {
+            "duration": 7.9820714,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:13"
+          }
+        ]
+      },
+      {
+        "name": "User clicks on Laptop Dell i7 8gb",
+        "aggregatedDurations": {
+          "median": 6.4087908,
+          "average": 6.4087908
+        },
+        "durations": [
+          {
+            "duration": 6.4087908,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Header should be (.+)$",
+    "steps": [
+      {
+        "name": "Header should be Sony vaio i5",
+        "aggregatedDurations": {
+          "median": 1.2055065,
+          "average": 1.2055065
+        },
+        "durations": [
+          {
+            "duration": 1.2055065,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:14"
+          }
+        ]
+      },
+      {
+        "name": "Header should be Dell i7 8gb",
+        "aggregatedDurations": {
+          "median": 1.1834929,
+          "average": 1.1834929
+        },
+        "durations": [
+          {
+            "duration": 1.1834929,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User clicks on AddToCart$",
+    "steps": [
+      {
+        "name": "User clicks on AddToCart",
+        "aggregatedDurations": {
+          "median": 5.15540645,
+          "average": 5.15540645
+        },
+        "durations": [
+          {
+            "duration": 5.1743448,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:15"
+          },
+          {
+            "duration": 5.1364681,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Product Added pop-up should appear$",
+    "steps": [
+      {
+        "name": "Product Added pop-up should appear",
+        "aggregatedDurations": {
+          "median": 2.32889575,
+          "average": 2.32889575
+        },
+        "durations": [
+          {
+            "duration": 3.111138,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:16"
+          },
+          {
+            "duration": 1.5466535,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User accepts pop-up confirmation$",
+    "steps": [
+      {
+        "name": "User accepts pop-up confirmation",
+        "aggregatedDurations": {
+          "median": 0.0086033,
+          "average": 0.0086033
+        },
+        "durations": [
+          {
+            "duration": 0.0100761,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:17"
+          },
+          {
+            "duration": 0.0071305,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User clicks cart button$",
+    "steps": [
+      {
+        "name": "User clicks cart button",
+        "aggregatedDurations": {
+          "median": 9.4469537,
+          "average": 9.4469537
+        },
+        "durations": [
+          {
+            "duration": 9.4469537,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:24"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Products should be added in cart$",
+    "steps": [
+      {
+        "name": "Products should be added in cart",
+        "aggregatedDurations": {
+          "median": 10.1507558,
+          "average": 10.1507558
+        },
+        "durations": [
+          {
+            "duration": 10.1507558,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User deletes (.+)$",
+    "steps": [
+      {
+        "name": "User deletes Dell i7 8gb",
+        "aggregatedDurations": {
+          "median": 10.2302034,
+          "average": 10.2302034
+        },
+        "durations": [
+          {
+            "duration": 10.2302034,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:30"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User fetch total amount$",
+    "steps": [
+      {
+        "name": "User fetch total amount",
+        "aggregatedDurations": {
+          "median": 5.055519,
+          "average": 5.055519
+        },
+        "durations": [
+          {
+            "duration": 5.055519,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:37"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User clicks on place order$",
+    "steps": [
+      {
+        "name": "User clicks on place order",
+        "aggregatedDurations": {
+          "median": 5.1152875,
+          "average": 5.1152875
+        },
+        "durations": [
+          {
+            "duration": 5.1152875,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Fill form details (.+),(.+),(.+),(.+),(.+),(.+)$",
+    "steps": [
+      {
+        "name": "Fill form details MAYANK JAIN,INDIA,DELHI,123456789,DEC,2020",
+        "aggregatedDurations": {
+          "median": 31.5498434,
+          "average": 31.5498434
+        },
+        "durations": [
+          {
+            "duration": 31.5498434,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:39"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User click on Purchase button$",
+    "steps": [
+      {
+        "name": "User click on Purchase button",
+        "aggregatedDurations": {
+          "median": 5.1242614,
+          "average": 5.1242614
+        },
+        "durations": [
+          {
+            "duration": 5.1242614,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:40"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Confirmation (.+) should be displayed$",
+    "steps": [
+      {
+        "name": "Confirmation Thank you for your purchase! should be displayed",
+        "aggregatedDurations": {
+          "median": 0.0288334,
+          "average": 0.0288334
+        },
+        "durations": [
+          {
+            "duration": 0.0288334,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:41"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Capture purchase details and log$",
+    "steps": [
+      {
+        "name": "Capture purchase details and log",
+        "aggregatedDurations": {
+          "median": 0.0689959,
+          "average": 0.0689959
+        },
+        "durations": [
+          {
+            "duration": 0.0689959,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:48"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Verify purchase details$",
+    "steps": [
+      {
+        "name": "Verify purchase details",
+        "aggregatedDurations": {
+          "median": 0.0,
+          "average": 0.0
+        },
+        "durations": [
+          {
+            "duration": 0.0,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:49"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Click on OK button$",
+    "steps": [
+      {
+        "name": "Click on OK button",
+        "aggregatedDurations": {
+          "median": 10.6360551,
+          "average": 10.6360551
+        },
+        "durations": [
+          {
+            "duration": 10.6360551,
+            "location": "file:///C:/Users/E01967/Documents/MVN/src/test/java/features/PurchaseProduct.feature:50"
+          }
+        ]
+      }
+    ]
+  }
+]
